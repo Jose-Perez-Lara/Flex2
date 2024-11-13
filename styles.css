@@ -1,104 +1,312 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
 :root {
-  --mainFontColor: rgba(255, 255, 255, 0.979);
-  --secondaryFontColor: rgba(157, 107, 250, 0.979);
+    --mainFontColor: rgba(255, 255, 255, 0.979);
+    --secondaryFontColor: rgba(157, 107, 250, 0.979);
 }
 
 body {
-  color: var(--mainFontColor);
+    color: var(--mainFontColor);
 }
 
 header {
-  background-image: linear-gradient(
-      137deg,
-      rgba(138, 255, 179, 0.5662640056022409) 0%,
-      rgba(193, 123, 250, 0.48783263305322133) 100%
-    ),
-    url(imagen21.avif);
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  width: 100%;
-  display: flex;
-  gap: 9vh;
-  flex-direction: column;
-  align-items: center;
+    background-image: linear-gradient(137deg,
+            rgba(138, 255, 179, 0.5662640056022409) 0%,
+            rgba(193, 123, 250, 0.48783263305322133) 100%),
+        url(imagen21.avif);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    width: 100%;
+    display: flex;
+    gap: 9vh;
+    flex-direction: column;
+    align-items: center;
 }
+
 .wave {
-  width: 100%;
-  height: 30vh;
-  position: relative;
-  bottom: 0;
+    width: 100%;
+    height: 30vh;
+    position: relative;
+    bottom: 0;
 }
 
 .topMenu {
-  margin-top: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  align-self: flex-end;
-  gap: 3vh;
-  margin: 20px 10px 20px 0;
+    margin-top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: flex-end;
+    gap: 3vh;
+    margin: 20px 10px 20px 0;
 }
 
 .topMenu a {
-  color: var(--mainFontColor);
-  text-decoration: none;
-  font-size: large;
+    color: var(--mainFontColor);
+    text-decoration: none;
+    font-size: large;
 }
 
 .headerContent {
-  display: flex;
-  flex-direction: column;
-  gap: 4vh;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+    align-items: center;
+    justify-content: center;
 }
 
 .headerContent h1 {
-  font-weight: 500;
-  font-size: 4em;
+    font-weight: 500;
+    font-size: 4em;
 }
 
 .headerContent h3 {
-  font-size: xx-large;
-  font-weight: 400;
+    font-size: xx-large;
+    font-weight: 400;
 }
 
 .sobreNosotros {
-  display: flex;
-  flex-direction: column;
-  color: var(--secondaryFontColor);
-  align-items: center;
-  margin-top: 5vh;
-  gap: 10vh;
+    display: flex;
+    flex-direction: column;
+    color: var(--secondaryFontColor);
+    align-items: center;
+    margin-top: 5vh;
+    gap: 10vh;
 }
+
 .sobreNosotros p {
-  color: black;
+    color: black;
 }
 
 .sobreNosotros h1 {
-  font-size: xxx-large;
+    font-size: xxx-large;
 }
 
 .relatoContainer {
-  display: flex;
-  gap: 3vh;
-  width: 90%;
+    display: flex;
+    gap: 3vh;
+    width: 90%;
+}
+
+.relatoContainer img {
+    width: 50%;
 }
 
 .relatos {
-  display: flex;
-  flex-direction: column;
-  gap: 6vh;
+    display: flex;
+    flex-direction: column;
+    gap: 6vh;
 }
 
 .relatos h2 {
-  font-size: xx-large;
+    font-size: xx-large;
+}
+
+.portafolio {
+    display: flex;
+    flex-direction: column;
+    color: var(--secondaryFontColor);
+    background-color: whitesmoke;
+    align-items: center;
+    margin-top: 5vh;
+    gap: 10vh;
+}
+
+.portafolio h1 {
+    margin-top: 5vh;
+    font-size: xxx-large;
+}
+
+.portafolioContainer {
+    display: flex;
+    width: 80%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2vh;
+    margin-bottom: 5vh;
+}
+
+.portafolioContainer img {
+    border-radius: 10px;
+    aspect-ratio: 4/3;
+}
+
+.pricing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5vh;
+    gap: 10vh;
+}
+
+.pricing h1 {
+    color: var(--secondaryFontColor);
+    font-size: xxx-large;
+
+}
+
+.precios {
+    display: flex;
+    width: 90%;
+    gap: 3vh;
+    color: var(--mainFontColor);
+
+}
+
+.precios h3 {
+    font-weight: 300;
+}
+
+.precios h1 {
+    color: var(--mainFontColor);
+    margin-top: 2vh;
+    font-size: xxx-large;
+}
+
+.precios div {
+    border: 0;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+    gap: 2vh;
+    background-color: var(--secondaryFontColor);
+    transition: all 0.3s ease;
+}
+
+.precios hr {
+    width: 90%;
+
+}
+
+
+.precios div:hover {
+    transform: scale(1.1);
+    background-color: rgb(166, 194, 233);
+}
+
+.buy {
+    border-radius: 10px;
+    width: fit-content;
+    border: 0;
+    padding: 1vh 3vh 1vh 3vh;
+    color: var(--secondaryFontColor);
+    background-color: var(--mainFontColor);
+    margin-bottom: 5vh;
+}
+
+footer {
+    background-color: var(--secondaryFontColor);
+    padding: 5vh 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+footer h2 {
+    font-size: 2.5em;
+    margin-bottom: 2vh;
+}
+
+.contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+    width: 90%;
+}
+
+.contactoInputs {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    width: 100%;
+}
+
+.contacto input,
+textarea {
+    width: 100%;
+    padding: 1em;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background-color: transparent;
+    color: white;
+    font-size: 1em;
+}
+
+.contacto input::placeholder,
+.contacto textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.contacto textarea {
+    height: 150px;
+}
+
+.contacto button {
+    padding: 0.8em 2em;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.waveFooter {
+    width: 100%;
+    height: 15vh;
+    position: relative;
+    bottom: 0;
+}
+
+@media screen and (max-width: 780px) {
+    .headerContent h1 {
+        font-weight: 500;
+        font-size: xxx-large;
+    }
+
+    .headerContent h3 {
+        font-size: large;
+        font-weight: 400;
+    }
+
+    .relatoContainer {
+        flex-direction: column;
+
+    }
+
+    .relatoContainer img {
+        width: 100%;
+    }
+
+    .sobreNosotros h1 {
+        font-size: xx-large;
+    }
+
+    .relatos h2 {
+        font-size: x-large;
+    }
+
+    .sobreNosotros p {
+        color: black;
+        font-size: medium;
+    }
+
+    .precios {
+        flex-direction: column;
+    }
+
+    .precios div {
+        width: 100%;
+    }
 }
